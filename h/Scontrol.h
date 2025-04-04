@@ -7,12 +7,12 @@ public:
 	Scontrol(int w = 0, 
 		 int h = 0,
 		 Scolor bc = WHITE,
-	         Swindow* w = nullptr,
+	         Swindow* win = nullptr,
 		 Sgrid* g = nullptr)
 	:width(w),
 	 height(h),
-	 bkcolor(WHITE),
-	 _window(w),
+	 bkcolor(bc),
+	 _window(win),
 	 _grid(g){}
 	
 	virtual bool render() = 0;
